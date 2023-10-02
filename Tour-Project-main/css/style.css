@@ -11,6 +11,22 @@
   text-transform: capitalize;
   transition: 0.2s linear;
 }
+
+::-webkit-scrollbar{
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(209, 219, 220);
+}
+
+::-webkit-scrollbar-thumb{
+  background: rgb(65, 234, 9);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-clip: content-box;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
