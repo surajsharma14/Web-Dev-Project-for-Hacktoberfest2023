@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+    <!--Header Section-->
+    <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Groco</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#review">Review</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <div class="icons">
+       <div class="fas fa-bars" id="menu-btn"></div>
+       <div class="fas fa-search" id="search-btn"></div>
+       <div class="fas fa-shopping-cart" id="cart-btn"></div>
+       <div class="fas fa-user" id="login-btn"></div>
+ 
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search here..">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart1.png">
+            <div class="content">
+                <h3>Watermelon</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart2.png">
+            <div class="content">
+                <h3>Onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart3.png">
+            <div class="content">
+                <h3>Chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total">total : $19.69/-</div>
+        <a href="#" class="btn">Check out</a>
+    </div>
+
+    <form action="" class="login-form">
+        <h3>Login Now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click Here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+    <!--header Section end-->
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh and <span>organic </span>products for your</h3>
+            <p>Lorem ipsum sut amet consectuetur adipsicing elit. Aliquam libero nostrum
+                veniam facere temopore nisi..</p>
+                <a href="#" class="btn">shop now</a>
+                
+        </div>
+
+
+
+    </section>
+    <!--home section-end-->
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
