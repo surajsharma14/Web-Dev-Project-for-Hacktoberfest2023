@@ -21,7 +21,7 @@ font-family: "Courier New", Courier, monospace;
   background-color: var(--primary_color);
 
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 90%;
   margin: 10px;
   text-align: center;
@@ -43,7 +43,7 @@ font-family: "Courier New", Courier, monospace;
   border-color: rgba(255, 255, 255, 0.4);
   padding: 0 42px;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: large;
 }
 
