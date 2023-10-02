@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@300&family=Roboto:wght@700&display=swap");
 :root {
-  --primary_color: #A5F1E9;
+  --primary_color: #a5f1e9;
 }
 
 body {
@@ -8,15 +9,22 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: #48dbfb;
+  /* background-color: #48dbfb; */
   background-size: cover;
   font-family: "Courier New", Courier, monospace;
 }
 
 .container {
-  background-color: var(--primary_color);
+  /* background-color: var(--primary_color);
+   */
+  color: #9d9e9e;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
+
+  backdrop-filter: blur(5px);
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 90%;
   margin: 10px;
   text-align: center;
@@ -42,7 +50,6 @@ body {
   font-size: 16px;
   border-radius: 15px;
   font-size: large;
-  
 }
 
 .info-text {
@@ -50,6 +57,7 @@ body {
 }
 
 .meaning-container {
+  font-family: "poppins";
   display: none;
 }
 

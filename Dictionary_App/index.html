@@ -6,17 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Dictionary</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@300&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <h1 class="heading">English Dictionary</h1>
       <div class="search-bar">
-        <input type="text" class="input" id="input" placeholder="Search a word" />
+        <input
+          type="text"
+          class="input"
+          id="input"
+          placeholder="Search a word"
+        />
       </div>
       <p class="info-text" id="info-text">Type a word and press enter</p>
       <div class="meaning-container" id="meaning-container">
-        <p class="extra">Word Title: <span class="title" id="title">_____</span></p>
-        <p class="extra">Meaning: <span class="meaning" id="meaning">_____</span></p>
+        <p class="extra">
+          Word Title: <span class="title" id="title">_____</span>
+        </p>
+        <p class="extra">
+          Meaning: <span class="meaning" id="meaning">_____</span>
+        </p>
         <p class="extra">Link: <span id="link">_____</span></p>
         <audio src="" controls id="audio"></audio>
       </div>
