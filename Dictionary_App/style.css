@@ -1,18 +1,27 @@
+:root{
+  --primary_color:#ffc100;
+}
+
 body {
   margin: 0;
   display: flex;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: rgb(209, 247, 229);
-  font-family: "Courier New", Courier, monospace;
+  /* background-color: rgb(209, 247, 229); */
+/* background-color: #ffff66; */
+background: url("./public/yellow_esport_background_03.jpg")  no-repeat fixed center  ;
+background-size: cover; 
+/* opacity:0.9; */
+font-family: "Courier New", Courier, monospace;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color: var(--primary_color);
+
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   width: 90%;
   margin: 10px;
   text-align: center;
@@ -21,7 +30,10 @@ body {
   font-weight: 500;
 }
 .heading {
-  font-size: 28px;
+  font-size: 30px;
+  /* color:var(--primary_color) */
+  font-family: "Architects Daughter", cursive;
+
 }
 
 .input {
@@ -32,8 +44,15 @@ body {
   padding: 0 42px;
   font-size: 16px;
   border-radius: 5px;
+  font-size: large;
 }
 
 .meaning-container {
   display: none;
+}
+
+.extra{
+  font-size: large;
+  font-weight: 700;
+  font-family: sans-serif;
 }
