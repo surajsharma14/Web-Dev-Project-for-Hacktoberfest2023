@@ -1,5 +1,7 @@
 # Web-Dev-Project-for-Hacktoberfest2023
 
+Lets get deep dive into open Source.
+
 ![Uploading 1_Lz_KFgbak2sUjwjOG9SZ4g.png…]()
 
 
@@ -40,5 +42,5 @@
 
   # Open a Pull Request to main Repo from your profile page.
    
-  # That's it Wolla
+ 
   # You made your Contribution.
