@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>English Dictionary</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="heading">English Dictionary</h1>
-      <input type="text" class="input" id="input" placeholder="Search a word" />
-      <p class="info-text" id="info-text">Type a word and press enter</p>
-      <div class="meaning-container" id="meaning-container">
-        <p class="extra">Word Title: <span class="title" id="title">_____</span></p>
-        <p class="extra">Meaning: <span class="meaning" id="meaning">_____</span></p>
-        <p class="extra">Link: <span id="link">_____</span></p>
-        <audio src="" controls id="audio"></audio>
-      </div>
-    </div>
 
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Dictionary</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">English Dictionary</h1>
+    <span class="material-symbols-outlined" style="font-size: 30px; vertical-align: middle;">search</span>
+    <input type="text" class="input" id="input" placeholder="Search a word" />
+    <p class="info-text" id="info-text">Type a Word and press Enter</p>
+    <div class="meaning-container" id="meaning-container">
+      <p class="extra">Word Title: <span class="title" id="title">_____</span></p>
+      <p class="extra">Meaning: <span class="meaning" id="meaning">_____</span></p>
+      <p class="extra">Link: <span id="link">_____</span></p>
+      <audio src="" controls id="audio"></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
