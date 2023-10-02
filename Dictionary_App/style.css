@@ -10,6 +10,9 @@ body {
   align-items: center;
   /* background-color: rgb(209, 247, 229); */
 /* background-color: #ffff66; */
+/* background-color: #48dbfb; */
+background-image: linear-gradient(315deg, #48dbfb 0%, #d3d3d3 74%);
+
 background-size: cover; 
 /* opacity:0.9; */
 font-family: "Courier New", Courier, monospace;
