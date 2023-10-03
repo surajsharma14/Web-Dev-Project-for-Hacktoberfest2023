@@ -103,4 +103,7 @@ footer {
   .input {
     padding: 0 5px;
   }
+  ::placeholder {
+    font-size: smaller;
+  }
 }
