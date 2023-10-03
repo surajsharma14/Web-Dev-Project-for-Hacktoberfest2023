@@ -17,7 +17,7 @@ body {
 .container {
   /* background-color: var(--primary_color);
    */
-  color: #9d9e9e;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
