@@ -33,6 +33,5 @@ public class feereport {
         }
         System.out.println("-----------");
         System.out.printf("Total\t\t$%.2f\t\t$%.2f\n", totalFeesPaid, totalFeesDue);
-        scanner.close();
     }
 }
