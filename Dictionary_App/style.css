@@ -107,3 +107,10 @@ footer {
     font-size: smaller;
   }
 }
+/* Add these styles for dark mode of your CSS file */
+.dark-mode {
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* White text color */
+  /* Add more styles for dark mode as needed */
+ 
+}
