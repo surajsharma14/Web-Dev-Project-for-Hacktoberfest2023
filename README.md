@@ -28,7 +28,7 @@ Lets get deep dive into open Source.
 
  - Install dependencies:
    
- - `cd .\CyberCell_Web\`
+ - `cd .\yourreponame\`
 - `npm install`
 - Start the development server:
 - `npm run dev`
