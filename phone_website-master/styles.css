@@ -74,7 +74,7 @@ Header
 }
 
 .container {
-  max-width: 117rem;
+  max-width: 160rem;
   margin: 0 auto;
   padding: 0 1.6rem;
 }
@@ -136,6 +136,7 @@ Navigation
 
 .nav__list {
   display: flex;
+  gap: 9rem;
   align-items: center;
   height: 100%;
   width: 50%;
@@ -160,6 +161,7 @@ Navigation
 
 .nav__icons {
   display: flex;
+  gap: 4rem;
   position: relative;
 }
 
@@ -2425,14 +2427,15 @@ Cart Area
 
 .auth .login-form{
   position: absolute;
-  top: 9%; 
+  top: 9%;
   right: -110%;
   width: 35rem;
   box-shadow: var(--box-shadow);
   padding: 2rem;
-  border-radius: .5rem;
-  background-color: #fff;
+  border-radius: 4.5rem;
+  background-color: #ebd1d1;
   text-align: center;
+  border: 2px solid indianred;
   z-index: 5;
 }
 .auth .login-form.active{
@@ -2450,7 +2453,7 @@ Cart Area
   width: 100%;
   margin: .7rem 0;
   background-color: #eee;
-  border-radius: .5rem;
+  border-radius: 1rem;
   padding: 1rem;
   font-size: 1.6rem;
   color: var(--black);
@@ -2462,8 +2465,39 @@ Cart Area
   color: var(--light-color);
 }
 .auth .login-form p a{
-  color: var(--orange);
-  text-decoration: underline;
+  color: #b32039;
+  text-decoration: none;
+}
+
+.auth_btn {
+  background-color: #fc6262;
+  border: 1px solid #e10707;
+  border-radius: 4px;
+  color: #433c3c;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  margin-top: 1rem;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+.auth_btn:hover {
+  border-color: #130d0d;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+.auth_btn:focus {
+  border-color: #f44242;
+  outline: none;
 }
 
 .searchF .search-form{
@@ -2472,8 +2506,8 @@ Cart Area
   right: -110%;
   max-width: 50rem;
   height: 5rem;
-  background-color: #fff;
-  border-radius: .5rem;
+  background-color: #fff0;
+  border-radius: 1.5rem;
   overflow: hidden;
   display: flex;
   box-shadow: var(--box-shadow);
@@ -2485,18 +2519,29 @@ Cart Area
   transition: .4s linear;
 }
 .searchF .search-form input{
-  height: 100%;
-  width: 100%;
-  background-color: none;
-  text-transform: none;
-  font-size: 1.6rem;
-  color: var(--black);
-  padding: 0 1.5rem;
+  font-size: 14px;
+border-radius: 1.35rem;
+line-height: 1.5;
+padding: 5px 10px;
+transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+border: 2px solid #dee1e2;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block;
+height: 36px;
 }
+
+.searchF .search-form input:hover {
+    border-color: #ccc;
+}
+.searchF .search-form input:focus{
+    border-color: #9147ff;
+    background: #fff;
+}
+
 
 .searchF .search-form label{
   font-size: 2.2rem;
-  padding-right: 1.5rem;
   padding-top: 1.4rem;
   color: var(--black);
   cursor: pointer;
@@ -2510,7 +2555,7 @@ Cart Area
   top: 9%; right: -110%;
   padding: 1rem;
   border-radius: .5rem;
-  box-shadow: var(--box-shadow);
+  box-shadow: rgba(0, 0, 0, 0.24) -14px 14px 8px;
   width: 30rem;
   background-color: #fff;
   z-index: 5;
@@ -2528,7 +2573,7 @@ Cart Area
 }
 
 .shopping-cart .box img{
-  height: 10rem;
+  height: 9rem;
   width: 10rem;
   object-fit: contain;
 }
