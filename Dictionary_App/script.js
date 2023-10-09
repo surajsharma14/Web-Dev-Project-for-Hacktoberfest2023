@@ -47,3 +47,13 @@ inputEl.addEventListener("keyup", (e) => {
     fetchAPI(e.target.value);
   }
 });
+// for dark mode
+function toggleDarkMode() {
+  const container = document.querySelector('.container');
+  container.classList.toggle('dark-mode'); // Toggle the dark-mode class on the container
+}
+
+//Add Event Listener for Dark Mode Toggle Button
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+darkModeToggle.addEventListener('click', toggleDarkMode); 
+
