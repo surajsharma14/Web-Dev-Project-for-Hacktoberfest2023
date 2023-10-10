@@ -57,7 +57,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 0px;
     background-color: white;
     box-shadow: var(--box-shadow);
     
@@ -81,30 +81,11 @@ section{
     text-decoration: none;
 }
 
-.header .navbar a:hover{
-    color: var(--orange);
-}
 
-.header .icons div{
-    height: 4.5rem;
-    width: 4.5rem;
-    line-height: 4.5rem;
-    border-radius: .5rem;
-    color: var(--black);
-    font-size: 2rem;
-    margin-right: .3rem;
-    text-align: center;
-    background-color: rgb(246, 246, 246);
-}
 
-.header .icons div:hover{
-    background-color: var(--orange);
-    color: #fff;
-}
 
-#menu-btn{
-    display: none;
-}
+
+
 
 .header .search-form{
     position: absolute;
@@ -286,7 +267,7 @@ section{
         font-size: 55%;
     }
     .header{
-        padding: 2rem;
+        /* padding: 2rem; */
     }
     section{
         padding: 2rem;
@@ -344,3 +325,40 @@ section{
     align-items: center;
     justify-content: center;
 }
+
+.leftSection{
+    margin-left: 10px;
+}
+
+.rightSection{
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+    margin-right: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+.storeName{
+    font-size: 5em;
+    font-family: 'Croissant One', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Young Serif', serif;
+}
+
+.navButton{
+    font-size: 13px;
+    cursor: pointer;
+    
+}
+
+.navButton:hover{
+    font-weight: 700;
+}
+
