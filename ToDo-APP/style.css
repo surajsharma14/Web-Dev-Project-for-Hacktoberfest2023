@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  body::before{
+    content: "";
+    width: 100vw;
+    height: 100%;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+    filter: blur(3px);
+  }
+
+  h1{
+    font-family: 'Kaushan Script', cursive;
+    background: rgb(227,0,255);
+background: linear-gradient(90deg, rgba(227,0,255,1) 6%, rgba(104,17,142,1) 37%, rgba(17,15,70,1) 75%);
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-decoration: underline;
+    color: white;
+    position: relative;
+
+  }
+  .input-group{
+    position: relative;
+    border: 3px solid rgb(15, 217, 224);
+    border-radius: 10px ;
+  }
+  
+  #add_btn{
+    color: rgb(216, 14, 243);
+    background-color: rgb(30, 16, 156);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all .5s ease-in-out;
+  }
+
+  #add_btn:hover{
+    color: rgb(7, 9, 104);
+    background-color:rgb(216, 14, 243); ;
+    transition: all .5s ease-in-out;
+    font-weight: 800;
+  }
+  
+  .parentlist{
+    padding: 2px ; 
+    position: relative; 
+    display: block;
+    border: 2px solid red;
+    
+  }
+
+  .edit:hover{
+    background-color: rgb(253, 143, 0);
+  }
+  .remove:hover{
+    background-color: rgb(177, 22, 22);
+  }
+   ul :hover{
+    background-color: rgb(228, 226, 226);
+   }
