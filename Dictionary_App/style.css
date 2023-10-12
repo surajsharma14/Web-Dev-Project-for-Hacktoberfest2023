@@ -79,6 +79,28 @@ footer {
   background:transparent;
 }
 
+/* ... (existing CSS rules) ... */
+
+.favorites-container {
+  display: none;
+}
+
+.favorite-button {
+  display: none;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.favorite-button.active {
+  display: inline-block;
+}
+
+/* ... (rest of the CSS remains the same) ... */
+
 /* Media Queries for responsiveness */
 
 @media screen and (max-width: 768px) {
