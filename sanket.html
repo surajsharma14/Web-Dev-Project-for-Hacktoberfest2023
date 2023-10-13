@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Harvest Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      .container {
+          /* Set the container's size and any other desired styles */
+          width: 100%; /* Adjust this to your preferred width */
+          height: auto; /* Adjust this to your preferred height or remove it for natural image size */
+          text-align: center; /* Center the image horizontally within the container */
+      }
+
+      .container img {
+          /* Set styles for the image inside the container */
+          max-width: 100%; /* Ensure the image doesn't exceed the container width */
+          height: auto; /* Maintain the image's aspect ratio */
+          display: block; /* Remove any extra spacing around the image */
+          margin: 0 auto; /* Center the image horizontally */
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+  </style>
+  <style>
+    body{
+      padding: 20px 0;
+    text-align: center;
+    font-size: 22px;
+    }
+  </style>
+  <style>
+  /* Style for the contact section */
+  footer {
+    background-color:  #b4f5f3;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d283ba;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+   <style>
+    .imagee-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .image {
+        text-align: center;
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image p {
+        margin: 0;
+    }
+</style>
+<style>
+  .imageee-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+
+  .image {
+      text-align: center;
+  }
+
+  .image img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .image p {
+      margin: 0;
+      margin-bottom: 20p;
+  }
+</style>
+  <style>
+  .center-container {
+            display: flex;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center; /* Center-align text */
+        }
+        .center-container img {
+            max-width: 100%; /* Ensure the image doesn't exceed its container width */
+        }
+</style>
+<style>
+  .image-container {
+      display: inline-flex; /* Use flexbox to create a row layout */
+      justify-content: space-between; /* Distribute space evenly between images */
+  }
+
+  .image {
+      width: 80%; /* Adjust the width to your preference */
+      margin-bottom: 20px;
+      margin: 5px; /* Add spacing between images */
+      size: 100;
+  }
+  .image-wrapper {
+    text-align: center; /* Center align the content */
+    /* margin: 10px; Add spacing between images */
+}
+</style>
+<style>
+    /* Define the style for the orange rectangle */
+    .orange-rectangle {
+        background-color: rgb(163, 39, 118);
+        width: 100%;
+        padding: 50px;
+        text-align: center;
+        color: white;
+        font-size: 60px;
+    }
+</style>
+
+  </head>
+  <body  style="background-color: #b4f5f3;">
+     
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"Home Gardening></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About this website</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </a>
+             <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Seed</a></li>
+                  <li><a class="dropdown-item" href="#">Plant</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sample</a></li>
+                </ul> 
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link disabled" aria="true">Usage Guide</a>
+              </li> 
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="orange-rectangle">
+        Hey, this is Home Harvest Hub
+    </div>
+      <div class="container">
+        <img src="https://img.freepik.com/premium-vector/tree-grow-plant-growth-from-seed-sapling-with-green-leaf-stages-seedling-growing-trees-soil-gardening-process-vector-concept-eco-botanical-cultivation-green-foliage_102902-4407.jpg"> 
+   <body style="text-align: center;">
+
+    <div class="imagee-container">
+      <div class="image">
+        <h2>Tulsi</h2>
+          <img src="https://myorganicgarden.in/wp-content/uploads/2016/09/tulsi-Useful-Medicinal-Plants-Y.jpg" alt="Image 1">
+          <p>Enhances positive energy</p>
+      </div>
+      <div class="image">
+        <h2>Alovera</h2>
+          <img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/Plants+Dec-19-Dec-20/aloe-vera.jpg" alt="Image 2">
+          <p>It Contains antioxidantse</p>
+      </div>
+      <div class="image">
+        <h2>Curry leaves</h2>
+          <img src="https://www.greendna.in/cdn/shop/products/51SM3_5YuNL._SX425_425x.jpg?v=1561092364" alt="Image 3">
+          <p>Good for our eyes.</p>
+      </div>
+  </div>
+  <div class="imageee-container">
+    <div class="image">
+      <h2>Mint Plant</h2>
+        <img src="https://a-z-animals.com/media/2022/09/Shutterstock_2107398803-1024x614.jpg" alt="Image 1">
+        <p>The Flavouring Queen</p>
+    </div>
+    <div class="image">
+      <h2>Lemon Grass</h2>
+        <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/files/nurserylive-lemon-grass-plant47_9fd962c2-7643-47f5-8a08-031d9d204dfa_480x480.jpg?v=1601034653" alt="Image 2">
+        <p>Anti-pyretic property</p>
+    </div>
+    <div class="image">
+      <h2>Ashwagandha</h2>
+        <img src="https://www.lilplants.com/wp-content/uploads/2017/08/Ashwagandha-Plant-3-600x600.jpg" alt="Image 3">
+        <p>Relieves Stress and Anxiety.</p>
+    </div>
+</div>
+           <h1>13 Gardening Tips For Beginners In India</h1>
+          
+            <!-- Collection list -->
+            
+          </ul>
+          
+            </div>
+          </header>
+          <article class="hentry entry-386330067079">
+            <div class="blog-single">
+          
+              <div class="blog-single-top display-block">
+            
+                <div class="blog-article-excerpt">
+                  <p><span style="font-weight: 400;">Starting to build a garden can be both exciting and daunting. It all starts with a sad patch of grass and as you keep growing, it transforms into a beautiful garden with flowers, fruit trees, veggie beds, raised beds, and garden art.</span></p>
+                </div>
+              </div>
+          
+              <div class="blog-single-banner display-block">
+                
+                <img src="//www.allthatgrows.in/cdn/shop/articles/Feat_Image-1_1100x1100.jpg?v=1589273736" data-src="//www.allthatgrows.in/cdn/shop/articles/Feat_Image-1_1100x1100.jpg?v=1589273736" alt="AllThatGrows" class=" lazyloaded">
+                
+              </div>
+            </div>
+          <div class="centre-container">
+            <div class="blog-single-content display-block entry-content section">
+              <p><span style="font-weight: 400; text-align: center;">Garden beautifies your home and is an excellent way to spend your time after work. If you’re new to gardening, start building your garden with these easy to follow steps:</span></p>
+          <h2><span style="font-weight: 400;">1. Pick the right spot</span></h2>
+          <p><span style="font-weight: 400;">It is always better to take small steps towards big wins. Pick a small space to start building your garden. </span></p>
+          <p><span style="font-weight: 400;">Ensure that the space you choose receives 5-6 hours of direct sunlight. Avoid a space that receives strong winds, it could knock over your young and budding plants. The wind will also keep pollinators from doing their job. </span></p>
+          <p><span style="font-weight: 400;">Lastly, think about the accessibility of your garden space for watering, picking, and caring for your plants. As they say, out of sight often equals out of mind.</span></p>
+          <h2><span style="font-weight: 400;">2. Pick a type</span></h2>
+          <p><span style="font-weight: 400;"><img src="//cdn.shopify.com/s/files/1/1380/2059/files/Pick_a_type-1_large.jpg?v=1589271476" alt="Pick a type"></span></p>
+          <h5><span style="font-weight: 400;">Once you identify the right spot for your garden, the next step in your journey to gardening is choosing what type of garden you want.</span></h5>
+          <p><span style="font-weight: 400;">Will it be a beautiful sea full of flowers, a gorgeous spread of herbs, a <a href="https://www.allthatgrows.in/blogs/posts/kitchen-garden-india">kitchen garden</a> for the budding chef in you, or a nutritious vegetable garden to keep you fit and healthy? No matter what you choose, take small steps to paint the picture of your perfect garden. </span></p>
+          <h2><span style="font-weight: 400;">3. Work on the soil</span></h2>
+          <p><span style="font-weight: 400;"><img src="https://img.freepik.com/free-photo/flat-lay-cactus-gardening-tools-with-copyspace_23-2148198730.jpg" alt="Pick a type"></span></p>
+          <p><span style="font-weight: 400;">Plants always benefit from the <a href="https://www.allthatgrows.in/blogs/posts/garden-soil-how-to-improve">nutrient-rich gardening soil</a>. Take your first step by examining the texture of your soil, it should be easily shovelled and crumble in your hands. </span></p>
+          <p><span style="font-weight: 400;">If your soil is hard and the texture is clay-like, it will be difficult for all the plants to grow their roots. If you have rocky soil, till the soil and remove the rocks.</span></p>
+          <p><span style="font-weight: 400;">Improving the quality of the soil is not as hard a task as you think, it comes with great benefits. Add organic compost made of tea compost, vegetable peels, to your soil to improve its quality.</span></p>
+          <h2><span style="font-weight: 400;">4. Grab basic gardening tools</span></h2>
+          <p><span style="font-weight: 400;"><img src="//cdn.shopify.com/s/files/1/1380/2059/files/Grab_the_basic_gardening_tools-1_large.jpg?v=1589271811" alt="Grab the basic gardening tools"></span></p>
+          <p><span style="font-weight: 400;">Once you have a plan in place, you’ll need some basic gardening tools to get started. We’re listing a handful of tools required for gardening. You will require:</span></p>
+          <ol>
+          <li>The must-haves: One tool that every gardener should own is a pair of pruning scissors. You will be using these to cut back plants and bushes, as well as maintain their health by cutting off the dead parts of these plants.&nbsp;</li>
+          <li>Tools for digging: You will need a couple of tools for digging and preparing your soil to start planting your greens. You will need a spade, a trowel, and a garden fork. The spade and trowel are used to dig the holes for your plants, whereas the garden fork is used for breaking the large clumps of soil or for clearing the roots of old plants and weeds.&nbsp;</li>
+          <li>Tools for watering: The best tools for generously watering your garden are garden hose (pipe) and a watering can. Garden hose is perfect for bigger tasks such as watering trees and larger areas. For delicate and small plants, a watering can is preferred. Your young plants cannot take the high pressure and will thank you for the gentle sprinkling.&nbsp;</li>
+          <li>Tools for weeding: To tackle the weed problem and get rid of these unwanted plants, you will require a forked trowel and a gardening knife. These two handy tools will allow you to keep the invading plants away.</li>
+          </ol>
+          
+           
+          <h2><span style="font-weight: 400;">5. Pick your plants</span></h2>
+          <p><span style="font-weight: 400;"><img src="https://reviewed-com-res.cloudinary.com/image/fetch/s--FOBASJgi--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_792/https://reviewed-production.s3.amazonaws.com/attachment/0e79e82d69e044af/seedlings.png" alt="Pick a type"></span></p>
+          <p><span style="font-weight: 400;">Now comes the most exciting part of the gardening process - picking your greens. Before you rush to a conclusion on what to grow in your garden, take some time to study the plants.</span></p>
+          <p><span style="font-weight: 400;">Some plants like direct sunlight while others prefer shade. You can check your plant seed package for this information. Picking the plants that are native to your area can make your life very easy, especially when you are about to become a plant parent. </span></p>
+          <p><span style="font-weight: 400;">You can also take a peek at your neighbours garden to see what plants are growing well in their garden or read our guide on which are the <a href="https://www.allthatgrows.in/blogs/posts/vegetable-growing-season-chart-india">best vegetables to grow by month</a>.</span></p>
+          <p><span style="font-weight: 400;">These methods will give you a fair idea of what type of plants will thrive in your garden.</span></p>
+          <h2><span style="font-weight: 400;">6. Plan It Out</span></h2>
+          <p><span style="font-weight: 400;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXSGG9xWI97LrPx9gkUP7HtQvd0Io1bJwMmQ64Uy_7CT32XpMbFSGO9wYw9c5_a-duYxE&usqp=CAU" alt="Pick a type"></span></p>
+          <p><span style="font-weight: 400;">Before getting your hands dirty and starting to plant your greens, plan it out!</span></p>
+          <p><b><em><span style="text-decoration: underline;">Planning</span></em>: </b><span style="font-weight: 400;">Map out where each and every plant will go, paying </span><span style="font-weight: 400;">detailed </span><span style="font-weight: 400;">attention to spacing. Like us, plants also need their own space. If you place young plants too close to each other, their growth can get affected, they will be more prone to diseases, or may simply die.&nbsp;&nbsp;</span><br><span style="font-weight: 400;"><br></span><b><em><span style="text-decoration: underline;">Labelling</span></em>:</b><span style="font-weight: 400;"> We are all forgetful in nature. To ensure that you know what is planted where in your garden and to identify these plants, take some time to make small labels and place them alongside your </span><span style="font-weight: 400;">plants. You can even get creative with your labels and come up with some unique ways to label your plants.</span><br><span style="font-weight: 400;"><br><b><em><span style="text-decoration: underline;">Organizing</span></em>:</b> Another great piece of advice for beginners is to make their own garden scrapbook and chart out the progress of the garden. You can add sketches, pictures, labels, and notes to keep a track of how each plant progressed in different parts of your garden and then make a progress report to understand the nature of these plants.</span></p>
+          <h2><span style="font-weight: 400;">7. Garden Beds</span></h2>
+          <p><span style="font-weight: 400;"><img src="//cdn.shopify.com/s/files/1/1380/2059/files/Garden_bed-1_large.jpg?v=1589272201" alt="Garden Beds"></span></p>
+          <p><span style="font-weight: 400;">Once you’re done with the planning, decide on the type and the size of the garden beds.&nbsp;</span><span style="font-weight: 400;"><a href="https://www.allthatgrows.in/blogs/posts/raised-bed-garden-guide">Raised beds</a> are attractive to look at and raised beds make it easier for you to work in your garden. </span></p>
+          <p><span style="font-weight: 400;">Gardening in blocks or beds is more convenient than gardening in single rows. Beds should be 3-4 feet across, narrow enough for you to reach the centre from either side. Beds should be about 8-10 feet long, so you can easily move around without stepping on the planting area.&nbsp;</span></p>
+          <p><span style="font-weight: 400;">Start small and give each </span><span style="font-weight: 400;">plant </span><span style="font-weight: 400;">its own space to grow. The seeds and transplants are small but fully-grown plants can get big, making the area overcrowded, making it difficult for the plants to thrive.&nbsp;</span><br><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">Within the garden beds, place your greens in rows or a grid pattern. The goal is to minimize walkways and maximize the growing space. You also save time and money by only adding fertilizer and soil amendments to the planting area.</span></p>
+          <h2><span style="font-weight: 400;">8. Plant With Care</span></h2>
+          <p><span style="font-weight: 400;"><img src="https://media.istockphoto.com/id/639426686/photo/asian-little-girl-helping-his-father-to-plant-the-tree.jpg?s=612x612&w=0&k=20&c=PdhVJdR7jnM7VqRuW-JZXuva5jhBa0zqUPy_aGVvgbM="></span></p>
+          <p><span style="font-weight: 400;">Once you’re done with the groundwork, you need to jump in and start planting. Most of our seed packets come with basic planting instructions. Give it a try and you’ll master the art of planting as you go.</span></p>
+          <h5><span style="font-weight: 400;">Rules of thumb for planting in your garden:</span></h5>
+        </span></p>
+          <ol>
+          <li>Plant seeds about 3-4 times as deep as the diameter of the seed unless otherwise written on the packaging of the seed. Cover the seeds with the soil and water them thoroughly ensuring that you do not expose the seeds.&nbsp;</li>
+          <li>For transplanting the young plants growing in the pot or containers to their final spot, dig up a hole twice as wide as the root ball. Fluff up the soil and add some organic fertilizer to boost the growth of your plant. Place the root ball and cover the roots entirely with the soil. Water your plants gently after transplantation.</li>
+          </ol>
+          <h2><span style="font-weight: 400;">9. Water your plants right</span></h2>
+          <p><span style="font-weight: 400;"><img src="//cdn.shopify.com/s/files/1/1380/2059/files/Water_your_plants_right-1_large.jpg?v=1589272468" alt="Water your plants right"></span></p>
+          <p><span style="font-weight: 400;">The goal of watering your plants is to give them enough water to sustain but overwatering your plants can lead to waterlogging which can damage your plants. </span></p>
+          <p><span style="font-weight: 400;">The best way to water your plants is slowly, allowing the water to reach deep into the soil. Ideally, the soil should get moist at about 3-4 inches beneath the surface.&nbsp;Plants need more water in the summer heat. Read our guide on <a href="https://www.allthatgrows.in/blogs/posts/how-to-water-plants-summer">watering plants in summer</a> for optimal plant growth in summer.</span></p>
+          <p><span style="font-weight: 400;">Plants at different stages of development also require different dosages of water. Young plants will need to be watered every day to encourage the growth of the plant and healthy roots, whereas developed plants will need to be watered once every 2-3 days, depending on the weather conditions. </span></p>
+          <h2><span style="font-weight: 400;">10. Nurture with organic fertilizers</span></h2>
+          <p><span style="font-weight: 400;">There's an old saying, “The fertilizer is the gardener's best friend.” Make your own <a href="https://www.allthatgrows.in/blogs/posts/organic-fertilizers">organic fertilizer</a> to give your plants the extra boost to grow. </span></p>
+          <p><span style="font-weight: 400;">Start with compost - organic material that can be added to your garden to help your plants grow. This can be anything from tea bags, grounded coffee, lawn trimmings, crushed fruit peels, etc. Adding these organic fertilizers to your soil will help it to retain moisture, stimulate good bacteria growth, and fight pests and diseases. It will also help you to reduce your carbon footprint.</span></p>
+          <h2><span style="font-weight: 400;">11. Keep pests and diseases away</span></h2>
+          <p><span style="font-weight: 400;">Pests and diseases are more attracted to plants that are stressed or have some deficiency. If you have healthy, well-nourished plants, your pest and disease problems should be lesser. If your plants get infected, chances are there's an organic solution. </span></p>
+          <p><span style="font-weight: 400;">It's easy to make up <a href="https://www.allthatgrows.in/blogs/posts/best-natural-pest-repellants">homemade&nbsp;pest control</a> for the yard and garden that use plant compounds and soap to knock out the bugs feasting on your plants. Mix up some neem oil, water and a few drops of dish soap. Shake it well and spray it on your plants once every two weeks to keep the pests away!</span></p>
+          <h2><span style="font-weight: 400;">12. Mulch may be your best bud</span></h2>
+          <p><span style="font-weight: 400;"><img src="//cdn.shopify.com/s/files/1/1380/2059/files/Mulch_may_be_your_best_bud-1_large.jpg?v=1589272742" alt="Mulching"></span></p>
+          <p><span style="font-weight: 400;">Depending on what plants you are growing, you may want to consider best <a href="https://www.allthatgrows.in/blogs/posts/how-to-mulch-garden-benefits">mulch for your plants</a>. Why, you ask? Mulch helps to feed the soil with nutrients and give protection against erosion. Mulch is any material that is spread or laid over the surface of the soil as a covering. It is used to retain moisture in the soil, keep the soil cool, suppress weeds, and make the garden bed look more attractive. As organic mulches decompose, they also help in improving the soil’s fertility.</span></p>
+          <h2><span style="font-weight: 400;">13. Vegetable gardening for beginners</span></h2>
+          <p><span style="font-weight: 400;"><img src="//cdn.shopify.com/s/files/1/1380/2059/files/Veg_Gardening_for_beginners-1_large.jpg?v=1589272895" alt="Vegetable Gardening for beginners"></span></p>
+          <p><span style="font-weight: 400;">There’s absolutely nothing quite like fresh veggies coming right from your garden. The juicy, fresh, flavorful veggies which you can pluck and put right on to your plate. Every region has a different planting time based mainly on its weather, and every vegetable has its temperature preferences, too. Start with easy-to-grow vegetables like tomatoes, radishes, capsicums, herbs, and salad leaves like lettuce, kale, rocket, chillies. Once you become a gardening expert, you can move towards growing vegetables like cabbage and broccoli that require more time and effort.</span></p>
+          <div class="slider-section grow-video">
+          <h3>A selection of beginner-friendly vegetable seeds to choose from. Order and grow your very own kitchen garden.</h3>
+          <div class="products cards first">
+                <!-- <ul class="related_blog_products slick-initialized slick-slider"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+                   </ul> -->
+                   </div>
+                   </div>
+                   </div>
+                   </div>
+                   </article>
+                   <footer>
+                    <div class="contact-section">
+                      <h2>Contact Us</h2>
+                      <p>If you're ready to turn your home into a lush garden paradise, don't hesitate to reach out. We have the seeds that will bring your garden dreams to life. Feel free to contact us anytime!</p>
+
+                      <ul>
+                        <li>Name: <a href="mailto:your@email.com">Agro park Nursery</a></li>
+                        <li>Phone: <a href="tel:+123456789">07942594841</a></li>
+                      </ul>
+                    </div>
+                  </footer>
+                  
+                   </body>
+                   </html>
