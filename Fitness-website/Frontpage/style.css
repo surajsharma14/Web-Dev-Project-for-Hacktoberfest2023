@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --blue: #c7c6cd;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+}
+
+*::selection {
+    background: var(--blue);
+    color: #efefef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.btn {
+    cursor: pointer;
+    border: .2rem solid rgba(0, 119, 255, 0.708);
+    color: rgba(0, 119, 255, 0.708);
+    background: none;
+    padding: .5rem 3rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 0;
+    font-size: 2rem;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 50, 108, 0.708);
+    z-index: -1;
+    clip-path: circle(0% at 0% 0%);
+    transition: .3s;
+}
+
+.btn:hover::before {
+    clip-path: circle(100%);
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.heading {
+    display: inline-block;
+    color: #333;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    padding-top: 8rem;
+    font-size: 3rem;
+    border-bottom: .2rem solid var(--blue);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 2rem 3rem;
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #fff;
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: var(--blue);
+}
+
+header #menu {
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
+header.header-active {
+    background: #fff;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+}
+
+header.header-active .logo,
+header.header-active .navbar a {
+    color: #333;
+}
+
+.home {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 119, 255, 0.708), rgba(0, 0, 0, 0.822));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%); */
+}
+
+.home h1 {
+    font-size: 6rem;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 .3rem .5rem #000;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.home .btn {
+    box-shadow: 0 .3rem .5rem #000;
+    color: #fff;
+}
+
+.about .row {
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8rem;
+    background-color: rgb(7, 7, 7);
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .row .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    color: rgb(236, 233, 233);
+    font-size: 4rem;
+}
+
+.about .row .content p {
+    color: rgb(206, 205, 205);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.service {
+    /* min-height: 100vh; */
+    text-align: center;
+    color: #eee;
+    background-color: rgb(7, 7, 7);
+}
+
+.service .heading {
+    color: #eee;
+}
+
+.service .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box {
+    height: 23rem;
+    width: 35rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.service .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.service .box-container .box .info {
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.service .box-container .box:hover .info {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.service .box-container .box .info h3 {
+    font-size: 2.5rem;
+    color: rgb(242, 240, 240);
+}
+
+.service .box-container .box .info p {
+    font-size: 1.2rem;
+    color: rgb(236, 232, 232);
+    padding: 1rem 2rem;
+}
+
+.ot {
+    min-height: 80vh;
+    text-align: center;
+    background: #333;
+    background-color: rgb(7, 7, 7);
+}
+
+.ot .heading {
+    color: #fff;
+}
+
+.ot .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ot .box-container .box {
+    height: 40rem;
+    margin: 1.5rem 1rem;
+    width: 27rem;
+    /* border: .5rem solid var(--blue); */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem #000;
+}
+
+.ot .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ot .box-container .box .info {
+    color: #333;
+    background: #fff;
+    border-top: .5rem solid var(--blue);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.ot .box-container .box .share {
+    position: absolute;
+    top: 1rem;
+    right: -100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.ot .box-container .box:hover .share {
+    right: 0;
+}
+
+.ot .box-container .box .share a {
+    height: 4rem;
+    width: 4.5rem;
+    line-height: 4rem;
+    color: #333;
+    font-size: 2rem;
+    background: #fff;
+    margin: .5rem 1rem;
+}
+
+.ot .box-container .box .share a:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+.plan {
+    /* min-height: 100vh; */
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+}
+
+.plan .heading {
+    color: #eee;
+}
+
+.plan .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan .box-container .box {
+    background: linear-gradient(rgb(47, 47, 47), rgb(0, 0, 0));
+    margin: 2rem;
+    width: 30rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.plan .box-container .box:hover {
+    transform: scale(1.04);
+}
+
+.plan .box-container .box .title {
+    font-size: 2.5rem;
+    background: var(--blue);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.plan .box-container .box .price {
+    font-size: 4rem;
+    color: rgb(229, 227, 227);
+    padding-top: 1rem;
+}
+
+.plan .box-container .box .price span {
+    font-size: 2rem;
+}
+
+.plan .box-container .box .month {
+    font-size: 2rem;
+    color: rgb(241, 239, 239);
+}
+
+.plan .box-container .box ul {
+    margin: 2rem 8rem;
+    list-style: none;
+}
+
+.plan .box-container .box ul li {
+    text-align: left;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: rgb(229, 225, 225);
+}
+
+.plan .box-container .box ul li i {
+    color: var(--blue);
+    padding: 0 .5rem;
+}
+
+.plan .box-container .box .btn {
+    margin-bottom: 3rem;
+}
+
+.register {
+    /* min-height: 90vh; */
+    text-align: center;
+    background-color: rgb(7, 7, 7);
+    padding-bottom: 3rem;
+}
+
+.register .heading {
+    color: #fff;
+}
+
+.register form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.register form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.register form .inputBox input,
+textarea {
+    height: 4rem;
+    width: 49%;
+    background: #111;
+    color: #fff;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: none;
+}
+
+.register form .inputBox input:focus,
+textarea:focus {
+    background: #222;
+}
+
+.register form textarea {
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    width: 100%;
+}
+
+.register form .btn:hover {
+    background: var(--blue);
+}
+
+.footer {
+    color: #eee;
+    background: #111;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+}
+
+.footer a {
+    color: cornflowerblue;
+}
+
+.footer a:hover {
+    color: rgb(159, 62, 62);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    header #menu {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .3);
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .navbar ul li a {
+        font-size: 2.5rem;
+        color: #333;
+        display: block;
+    }
+
+    header .navbar.nav-toggle {
+        top: 8rem;
+        opacity: 1;
+    }
+
+    .register form {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width:500px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home h1 {
+        font-size: 5rem;
+    }
+
+    .register form .inputBox input {
+        width: 100%;
+    }
+
+}
