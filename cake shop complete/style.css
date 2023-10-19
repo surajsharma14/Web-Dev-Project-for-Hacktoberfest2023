@@ -1,0 +1,430 @@
+:root{
+    --main-color:#00c9a5;
+    --nav-color: #00afa5;
+    --bg-color: #e8f3f1;
+    --black: #2f4858;
+    --card-color: #c0dbea;
+    --border:  .1rem solid var(--card-color);
+    --box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .3s ease-in;
+    scroll-behavior: smooth;
+    scroll-padding-top: 16vh;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+}
+section{
+    padding: 2rem 7%;
+}
+.btn{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1.7rem;
+    padding:  0.8rem 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: 0.2rem;
+}
+
+.title{
+    text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), 2px -2px 0 var(--card-color), -2px 2px 0 var(--card-color);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    font-size: 4rem;
+}
+
+.title span{
+    color: var(--main-color);
+}
+
+.header{
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    height: 16vh;
+    /* z-index: 1000; should be the highest value in the whole html */
+
+}
+
+.header .logo img{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.header .navbar a{
+    color: white;
+    font-size: 1.8rem;
+    margin: 0.7rem;
+}
+
+.header .navbar a:hover{
+    color:var(--black);
+    border-top: .1rem solid var(--black);
+    border-bottom: .1rem solid var(--black);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.header .icons{
+    display: flex;
+
+}
+.header .icons div{
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+.header .icons div:hover{
+    color: var(--black);
+}
+.header .icons .menu-icon{
+    display: none;
+}
+.header .search-form{
+    display: flex;
+    align-items: center ;
+    position: absolute;
+    
+    top:115%;
+    right: -100%;
+    width: 45rem;
+    /* border: 1px solid var(--black); */
+    height: 4.5rem;
+    background-color: white;
+
+}
+.header .search-form input{
+    width: 100%;
+    height: 100%;
+    
+    padding: 1rem;
+    text-transform: none;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+.header .search-form label{
+    
+    color: var(--black);
+    font-size: 2rem;
+    padding-right: 1.3rem;
+    cursor: pointer;
+}
+.header .search-form.active{
+    right: 7%;
+}
+
+.header .cart-items-container{
+    position: absolute;
+    top:100%;
+    right:-100%;
+    width: 35rem;
+    background-color: white;
+    height: 80vh;
+    border: solid 1px black;
+}
+
+.header .cart-items-container.active{
+    
+    right:0;
+    
+}
+
+.header .cart-items-container a{
+    width:100%;
+}
+
+.header .cart-items-container .cart-item{
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 2.5rem;
+    /* border: solid 1px black; */
+    position: relative;
+    gap:1rem;
+}
+.header .cart-items-container .cart-item img {
+    width: 8rem;
+   
+}
+
+.header .cart-items-container .cart-item span {
+    position: absolute;
+    top:5%;
+    right: 4%;   
+    font-size: 2rem;
+    color: var(--black);
+    cursor:pointer;
+}
+
+.header .cart-items-container .cart-item span.hover {
+    
+    color: red;
+}
+.header .cart-items-container .cart-item .content h3{
+    font-size: 1.5rem;
+    
+    color: var(--black);
+    padding-bottom: 0.8rem;
+}
+
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 84vh;
+    margin-top: 16vh;
+    background-color: aqua;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+}
+
+.home .hero{
+    width: 60rem;
+}
+.home .hero h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: white;
+
+
+}
+.home .hero p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3.2rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem
+}
+
+.cakes .wrapper .cake-card{
+    background-color: var(--card-color);
+    padding: 3rem 2rem;
+    text-align: center;
+    transform-origin: top center;
+}
+
+.cakes .wrapper .cake-card:hover{
+    transform: scaleY(1.1);
+    background-color: var(--black);
+}
+
+.cakes .wrapper .cake-card:hover *:not(a){
+    color: var(--main-color);
+}
+
+.cakes .wrapper .cake-card img{
+    width: 100%;
+}
+
+.cakes .wrapper .cake-card h3{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.cakes .wrapper .cake-card .price{
+    color: white;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
+
+.cakes .wrapper .cake-card .price span{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.cheese-cakes .wrapper .cheese-card{
+    background-color: #eac7c7;
+    text-align: center;
+    padding: 2rem;
+    border: var(--border);
+}
+
+.cheese-cakes .wrapper .cheese-card:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.cheese-cakes .wrapper .cheese-card .icons a{
+    border: var(--border);
+    height: 5rem;
+    width: 5rem;
+    color: white;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin: .3rem;
+}
+
+.cheese-cakes .wrapper .cheese-card .icons a:hover{
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+
+.cheese-cakes .wrapper .cheese-card .img{
+    padding: 2.5rem 0;
+}
+
+.cheese-cakes .wrapper .cheese-card .img img{
+    height: 20rem;
+}
+
+.cheese-cakes .wrapper .cheese-card .content h3{
+    color: white;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+
+}
+
+.cheese-cakes .wrapper .cheese-card .content .stars{
+    padding: 1.8rem;
+} 
+
+.cheese-cakes .wrapper .cheese-card .content .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+    
+}
+
+.cheese-cakes .wrapper .cheese-card .content .price{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.cheese-cakes .wrapper .cheese-card .content .price span{
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
+
+.new-arrivals .wrapper .card{
+    background-color: #ffdca9;
+    border: var(--border);
+}
+
+.new-arrivals .wrapper .card .img{
+    width:100%;
+}
+
+.new-arrivals .wrapper .card .img img{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.new-arrivals .wrapper .card .content{
+    padding: 2rem;
+}
+
+.new-arrivals .wrapper .card .content a:nth-of-type(1){
+    font-size: 2.5rem;
+    line-height: 5rem;
+    color: var(--black);
+
+}
+
+.new-arrivals .wrapper .card .content p{
+    color: grey;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.new-arrivals .wrapper .card .content p{
+    color: var(--black);
+}
+.new-arrivals .wrapper .card .content .btn{
+    transform: scale(0);
+}
+
+.new-arrivals .wrapper .card:hover .content .btn{
+    transform: scale(1);
+}
+
+.about .container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+
+}
+
+.about .conatiner .img{
+    flex: 1 1 45rem;
+}
+.about .conatiner .img img{
+    width:100%;
+}
+.about .container .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .container .content h3{
+    font-size: 3rem;
+    color: white;
+    padding: 1.2rem 0;
+}
+
+.about .container .content p{
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 2.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
