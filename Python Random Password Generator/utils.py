@@ -15,6 +15,6 @@ def generate_random_password(length):
             return password
 
 # Generate and print a random password
-length = int(input('Enter the length of the password: '))
-password = generate_random_password(length)
-print("Generated Password:", password)
+
+#password = generate_random_password(length)
+#print("Generated Password:", password)

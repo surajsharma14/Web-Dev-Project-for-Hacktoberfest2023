@@ -1,4 +1,4 @@
-from generator import generate_random_password
+from utils import generate_random_password
 import streamlit as st
 import pyperclip
 custom_val=[6,7,8,9,10,11,12,13,14,15]
