@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marvel Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="playlist">
+        <ul>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/AC-DC-Back-in-black-djlunatique.com.mp3"
+            >
+              <span>Iron-Man Theme Song</span>
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/ironman.webp"
+              alt="Iron-Man Album Art"
+            />
+          </li>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/Redbone - Come And Get Your Love (Lyrics) [Guardians Of The Galaxy].mp3"
+            >
+              Star Lord Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/starlord.webp"
+              alt="Star Lord Album Art"
+            />
+          </li>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/Michael Giacchino - Theme (from Spider Man Original Television Series) _ Spider-Man_ No Way Home OST.mp3"
+            >
+              Spiderman Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/spiderman_NWH.webp"
+              alt="Spiderman Album Art"
+            />
+          </li>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/Deadpool Opening.mp3"
+            >
+              Deadpool Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/deadpool.webp"
+              alt="Deadpool Album Art"
+            />
+          </li>
+
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/Guardians of the Galaxy vol. 3 - Dog Days Are Over.mp3"
+            >
+              GOTG vol.3 Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/guardians_of_the_galaxy.webp"
+              alt="Guardians of the Galaxy Album Art"
+            />
+          </li>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/Guardians Of The Galaxy Vol. 3 Song _ To The Sky _ [Rocket Raccoon Song].mp3"
+            >
+              Rocket Racoon Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/rocket_racoon.webp"
+              alt="Rocket Racoon Album Art"
+            />
+          </li>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/The Amazing Spider-Man 2 - Gone, Gone, Gone (HD) By Phillip Phillips.mp3"
+            >
+              TASM Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/tasm_spiderman.webp"
+              alt="The Amazing Spiderman Album Art"
+            />
+          </li>
+          <li>
+            <button
+              class="play-button"
+              data-src="./assets/music/The Avengers Ringtone.mp3"
+            >
+              Avengers Theme Song
+            </button>
+            <img
+              class="album-art"
+              src="./assets/images/Avengers.webp"
+              alt="Avengers Album Art"
+            />
+          </li>
+          <!-- <li>
+                <button
+                  class="play-button"
+                  data-src="./assets/music/Binks Sake - One Piece _ Yo Ho Ho _ Violin _ Anime Ringtone......mp3"
+                >
+                  Binks Sake - One Piece
+                </button>
+                <img
+                  class="album-art"
+                  src="one-piece-album-art.webp"
+                  alt="One Piece Album Art"
+                />
+              </li> -->
+        </ul>
+      </div>
+      <div class="blur">
+        <div id="player-controls">
+          <button id="shuffle-button">
+            <i class="fa-solid fa-shuffle"></i>
+            <span id="shuffle-status">Off</span>
+          </button>
+          <div id="currently-playing">
+            <span id="song-name">Not playing any songs.</span>
+          </div>
+          <button id="repeat-button">
+            <i class="fa-solid fa-repeat"></i>
+            <span id="repeat-status">All</span>
+          </button>
+        </div>
+        <div class="players">
+          <button id="prev-button">
+            <i class="fa-solid fa-backward-step"></i>
+          </button>
+          <button id="play-selected-button">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <audio id="music" controls>
+            <source src="" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <button id="next-button">
+            <i class="fa-solid fa-forward-step"></i>
+          </button>
+        </div>
+      </div>
+
+      <script src="./assets/js/app.js"></script>
+    </div>
+  </body>
+</html>
