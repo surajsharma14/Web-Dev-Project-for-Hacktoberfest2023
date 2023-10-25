@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu"> 
+            <div class="menu-item si active">Simple Interest</div>
+            <div class="menu-item ci">Compound Interest</div>
+        </div>
+        <div class="form">
+            <div class="input-grp">
+                <label>Initial Amount <span class="required">*</span></label>
+                <input type="text" id="pa" placeholder="100">
+            </div>
+            <div class="input-grp">
+                <label>Interest Rate (In %) <span class="required">*</span></label>
+                <input type="text" id="in" placeholder="1">
+            </div>
+            <div class="input-grp">
+                <label>Duration (In year) <span class="required">*</span></label>
+                <input type="text" id="dy" placeholder="1">
+            </div>
+            <div class="input-grp ci-freq">
+                <label>Compounding Frequency (In years) <span class="required">*</span></label>
+                <input type="text" id="fy" placeholder="2">
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button class="btn">Calculate!</button>
+        </div>
+        <div class="result">
+            <strong>Total Amount:</strong>
+            <span class="total">10000</span>
+        </div>
+    </div>
+
+    <script>
+
+        const interestType = {
+            si: 0,
+            ci: 1
+        }
+
+        let selectedInterest = interestType.si;
+        
+        const SIButton = document.getElementsByClassName("si")[0];
+        const CIButton = document.getElementsByClassName("ci")[0];
+        const CIFrequency = document.getElementsByClassName("ci-freq")[0];
+        const resultWrapper = document.getElementsByClassName("result")[0];
+        const Calculate = document.getElementsByClassName("btn")[0];
+
+
+        CIFrequency.style.display = 'none';
+        resultWrapper.style.display = 'none';
+
+        const reset = () => {
+            const PA = document.getElementById("pa").value = '';
+            const IR = document.getElementById("in").value = '';
+            const DY = document.getElementById("dy").value = '';
+
+            if (selectedInterest === interestType.ci) {
+                const FY = document.getElementById("fy").value = '';
+            }
+
+            resultWrapper.style.display = 'none';
+        }
+
+        const updateInterestFeature = () => {
+            if (selectedInterest === interestType.si) {
+                CIButton.classList.remove('active');
+                SIButton.classList.add('active');
+                CIFrequency.style.display = 'none';
+            } else {
+                SIButton.classList.remove('active');
+                CIButton.classList.add('active');
+                CIFrequency.style.display = 'block';
+            }
+        }
+
+        const CalculateAmount = () => {
+            const PA = document.getElementById("pa").value;
+            const IR = document.getElementById("in").value;
+            const DY = document.getElementById("dy").value;
+
+            if(!PA || !IR || !DY) {
+                alert("All fields are required.");
+                reset();
+                return;
+            }
+            if(isNaN(PA) || isNaN(IR) || isNaN(DY)) {
+                alert("The values must be numbers! Please try again.");
+                reset();
+                return;
+            }
+
+
+            const finalAmount = document.getElementsByClassName("total")[0];
+
+            let result = 0;
+
+            if (selectedInterest === interestType.si) {
+                result = PA * (1 + (IR * DY))
+            } 
+            if (selectedInterest === interestType.ci) {
+                const FY = document.getElementById("fy").value;
+                result = PA * Math.pow((1 + (DY / FY)), FY*DY)
+            }
+
+            resultWrapper.style.display = 'block';
+            finalAmount.innerHTML = result;
+        }
+
+        const selectInterestType = (type) => {
+            reset();
+            selectedInterest = type;
+            updateInterestFeature();
+        }
+
+
+        SIButton.addEventListener('click', () => {
+            selectInterestType(interestType.si);
+        })
+
+        CIButton.addEventListener('click', () => {
+            selectInterestType(interestType.ci);
+        })
+
+        Calculate.addEventListener('click', CalculateAmount);
+    
+    </script>
+</body>
+    
+</html>

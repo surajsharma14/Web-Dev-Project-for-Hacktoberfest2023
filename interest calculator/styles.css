@@ -1,0 +1,125 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.container {
+    min-width: 400px;
+    box-shadow: 1px 1px 10px #ccc;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    flex-basis: 50%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+.menu-item:hover {
+    color: white;
+    border: 1px solid transparent; 
+    background-color: #4e65f2;
+    transition: all 0.1s ease-out;
+}
+
+.menu-item:nth-child(2) {
+    margin-left: 10px;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+.input-grp {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-grp label{
+   display: block ; 
+   margin-bottom: 8px;
+}
+
+.input-grp input {
+    min-height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.input-grp input::placeholder {
+    color: rgb(179, 179, 179);
+}
+
+.required {
+    color: #4e65f2;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 0ch;
+    font-size: 18px;
+    color: white;
+    background-color: #4e65f2;
+    border-radius: 35px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn:hover {
+    background-color: #293bb0;
+}
+
+.active {
+    color: white;
+    border: 1px solid transparent; 
+    background-color: #4e65f2;
+}
+
+.result {
+    margin-top: 25px;
+    border: 1px solid rgb(225, 225, 225);
+    padding: 15px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+      min-width: none;
+    }
+  }
+  
