@@ -1,0 +1,1 @@
+this._stpt.y - this._endpt.y, this._stpt.x - this._endpt.x)
