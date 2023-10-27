@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "watch": true,
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es6",
+    "module": "CommonJS",
+    "allowJs": true,
+    "lib": [ "DOM", "ES2015" ],
+    "moduleResolution": "Node"
+    
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
