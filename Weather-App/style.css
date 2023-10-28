@@ -1,0 +1,14 @@
+body{
+    background: url(image/bg-image-1.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/* .card {
+    background: #3636363a;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  } */
